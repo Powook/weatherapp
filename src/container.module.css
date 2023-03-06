@@ -1,0 +1,38 @@
+.mainWindow {
+  background-color: white;
+  width: 30%;
+  height: 700px;
+  margin: 100px auto;
+  border-radius: 15px;
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60% 40%;
+}
+
+.weatherIndication {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: rgba(150, 255, 246, 0.76);
+  border-radius: 15px;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.weatherInfo {
+  justify-content: space-between;
+  background-color: bisque;
+  border-radius: 15px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.addInfo {
+  background-color: rgba(24, 155, 144, 0.37);
+  border-radius: 15px;
+}
+
