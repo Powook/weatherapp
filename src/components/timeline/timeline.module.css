@@ -1,0 +1,16 @@
+.timelineTemp {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+.timelineTime {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeLineGraph {
+  grid-column: 1/4;
+}

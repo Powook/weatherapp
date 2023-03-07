@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { City } from './components/City/City';
+import { TimeLineContainer } from './components/timeline/timeline';
 import  {WeatherDisplayContainer}  from './components/weatherDisplayContainer'
 import styles from './container.module.css'
 
@@ -10,9 +10,10 @@ function App() {
       <div className={styles.mainWindow}>
         <div className={styles.weatherIndication}>
           <WeatherDisplayContainer/>
+          <TimeLineContainer/>
         </div>
         <div className={styles.weatherInfo}>
-          <City/>
+
         </div>
         <div className={styles.addInfo}>
 
