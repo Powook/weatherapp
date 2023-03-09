@@ -14,8 +14,8 @@ console.log(props)
 
   return <WeatherDisplay weatherState={props.weatherState} />
 }
-function mapStateToProps(state: any) {
 
+function mapStateToProps(state: any) {
   return{
     weatherState: state.weatherReducer.weatherReducer.weather,
   }

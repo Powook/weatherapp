@@ -15,13 +15,45 @@ export const BarChart = (props) => {
       {
         label:'',
         data: arrOfTemp,
-        borderColor: '#FFFFFF',
+        borderColor: 'rgba(238, 255, 0, .8)',
         fill: false,
         lineTension: 0.5,
         borderWidth:2,
+
       },
     ],
   };
+
+  const lineChartOptions ={
+    responsive: true,
+    plugins: {
+      legend: {
+        display:false
+      },
+    },
+    scales: {
+      x:{
+        ticks: {
+          color: 'rgb(223, 223, 223)',
+          maxRotation:0
+        },
+        grid: {
+          color: 'rgba(223, 223, 223, 0.3)',
+        },
+      },
+      y: {
+        ticks: {
+          color: 'rgb(223, 223, 223)',
+          callback: function(value, index, ticks) {
+            return value + ' °C'
+          }
+        },
+        grid: {
+          color: 'rgba(223, 223, 223, 0.3)',
+        }
+      },
+    }
+  }
 
   return (
     <Line
@@ -29,6 +61,7 @@ export const BarChart = (props) => {
       width={160}
       height={60}
       data={lineChartData}
+      options = {lineChartOptions}
     />
   );
 }
