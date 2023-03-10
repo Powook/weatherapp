@@ -7,7 +7,7 @@ function WeatherDisplayContainerApi (props: any) {
 
 console.log(props)
   useEffect(()=> {    
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?id=2867714&appid=7841727ef5050281f8361e79d5e987ca`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?id=1489425&appid=7841727ef5050281f8361e79d5e987ca`)
     .then(response=>response.json())
     .then(responce=>props.setWeather(responce))   
   }, [ ])
